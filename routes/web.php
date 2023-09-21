@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
     AnggotaController, 
-    BukuController, 
     PetugasController
 };
 
@@ -22,8 +21,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('dashboard');
 
-Route::get('/anggota', [AnggotaController::class, 'anggota'])->name('get_anggota');
+// Route::get('/anggota', [AnggotaController::class, 'anggota'])->name('get_anggota');
 
-Route::get('/buku', [BukuController::class, 'buku'])->name('get_buku');
+// Route::get('/buku', [BukuController::class, 'buku'])->name('get_buku');
 
-Route::get('/petugas', [PetugasController::class, 'petugas'])->name('get_petugas');
+// Route::get('/petugas', [PetugasController::class, 'petugas'])->name('get_petugas');
+Route::resource('/anggota' , AnggotaController::class);
+Route::resource('/petugas' , PetugasController::class);

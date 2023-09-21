@@ -22,8 +22,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
 
-        <!-- Navbar -->
-        @include('separate.header')
+<!-- Navbar -->
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
